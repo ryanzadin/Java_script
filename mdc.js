@@ -7,7 +7,9 @@ function calcularMDC(a, b) {
     return a;
 }
 
-let numero1 = 28;
-let numero2 = 42;
+let numero1 = 24;
+let numero2 = 36;
 let resultado = calcularMDC(numero1, numero2);
 console.log(`MDC de ${numero1} e ${numero2}: ${resultado}`);
+
+module.exports = {calcularMDC};

@@ -22,3 +22,4 @@ console.log('Números mútiplos de ' + x +' e ' + z + ', abaixo de ' + numberLis
 console.log(solution(numberList));
 console.log('A soma desses múltiplos é ' + sum);
 
+module.exports = {solution,sum};

@@ -1,13 +1,17 @@
-var array = ["534", "856", "832", "903", "233"];  
-var maior_numero = array.map(Number).reduce(function(numero1, numero2) {  
-  return Math.max(numero1, numero2);  
-});  
-        
-console.log(maior_numero ); 
+const numeros = ["534", "856", "832", "903", "233"] 
 
-var array = ["78", "678", "15", "435", "673"];  
-var menor_numero = array.map(Number).reduce(function(numero1, numero2) {  
-  return Math.min(numero1, numero2);  
-});  
-        
-console.log(menor_numero ); 
+function maiorNumero  (array)  {
+let maior_numero = array.reduce((numero1, numero2) => numero1 > numero2 ? numero1 : numero2);
+   console.log(maior_numero)
+};
+maiorNumero(numeros)
+
+
+function menorNumero (array) {
+    let menor_numero = array.reduce((numero1, numero2) => numero1 < numero2 ? numero1 : numero2);
+  
+    console.log(menor_numero)
+};
+menorNumero(numeros)
+
+module.exports = {maiorNumero,menorNumero};
